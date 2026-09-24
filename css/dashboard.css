@@ -1,0 +1,64 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Defaults: 
+Medium:
+Semi-bold:
+Bold:
+
+- Line heights
+Default: 1
+Small: 
+Medium: 
+Paragraph default: 
+
+- Letter spacing 
+
+--- 02 COLORS
+
+Primary: 
+
+Accents:
+
+Greys:
+
+Tints: 
+
+Shades: 
+
+--- 03 IMAGES
+(ToolBox)
+
+--- 04 ICONS
+(ToolBox)
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+Default:
+Medium: 
+
+--- 07 WHITE SPACE
+
+- spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+--- 08 ANIMATIONS / TRANSITIONS
+
+- Transition duration: 0.3s, 0.5s
+- Easing: ease-in, ease-out, ease-in-out, linear
+- Common transition: all 0.3s ease-in-out
+- Hover effects: transform: scale(1.05), opacity: 0.8
+*/
+
+/*========================*/
+/* GLOBAL RESET          */
+/*========================*/
+
+/*==============================*/
+/* GENERAL REUSABLE COMP        */
+/*==============================*/
