@@ -1,0 +1,46 @@
+/* ==========================================================================
+   MEDIA QUERIES - RESPONSIVE DESIGN SYSTEM (desktop-first, max-width)
+   ========================================================================== */
+
+/*
+   RULES:
+   - Media queries handle LAYOUT: collapse grids, stack rows, mobile nav,
+     step down section spacing and gutter, hide decorative elements.
+   - Type scales on its own with clamp(). The root font-size stays 100%.
+   - Breakpoints in em: px / 16 = em (1em = 16px in queries, always).
+   - CSS variables cannot be used inside media query conditions.
+   - Place breakpoints where the design breaks, roughly every 150-300px.
+*/
+
+/* ====================================== */
+/* BELOW 1344px (Smaller desktops) = 84em */
+/* ====================================== */
+@media (max-width: 84em) {
+}
+
+/* ============================================ */
+/* BELOW 1232px (Landscape tablets) = 77em      */
+/* ============================================ */
+@media (max-width: 77em) {
+}
+
+/* ============================== */
+/* BELOW 944px (Tablets) = 59em   */
+/* ============================== */
+@media (max-width: 59em) {
+}
+
+/* ===================================== */
+/* BELOW 744px (Small tablets) = 46.5em  */
+/* ===================================== */
+@media (max-width: 46.5em) {
+}
+
+/* ============================== */
+/* BELOW 544px (Phones) = 34em    */
+/* ============================== */
+@media (max-width: 34em) {
+  :root {
+    --gutter: 1rem;
+  }
+}
