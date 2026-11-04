@@ -1,1 +1,48 @@
-/* shared pieces: buttons, inputs, badges, modals, toast */
+/* 
+==========================================================================
+  SHARED PIECES: BUTTONS, INPUTS, BADGES, MODALS, TOAST
+=========================================================================== 
+*/
+
+/* reset anchor (links) */
+.link-reset:link,
+.link-reset:visited {
+  text-decoration: none;
+}
+
+/* reset button */
+.btn-reset {
+  border: none;
+  background: none;
+}
+
+/* base button */
+.btn {
+  display: inline-block;
+  line-height: var(--lh-normal);
+  font-weight: var(--fw-semibold);
+  padding: var(--space-10) var(--space-20);
+  border-radius: var(--radius-md);
+  transition: background-color var(--duration-base) var(--ease-out);
+}
+
+/* primary button */
+.btn--primary {
+  color: var(--color-text-on-primary);
+  background-color: var(--color-primary);
+}
+
+.btn--primary:hover,
+.btn--primary:active {
+  background-color: var(--color-primary-hover);
+}
+
+/* ghost button */
+.btn--ghost {
+  color: var(--color-primary);
+}
+
+.btn--ghost:hover,
+.btn--ghost:active {
+  background-color: var(--color-surface-muted);
+}

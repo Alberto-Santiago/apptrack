@@ -6,22 +6,116 @@
     <title>AppTrack</title>
 
     <!-- Attached CSS -->
-    <link rel="stylesheet" href="/css/landing.css" />
-    <link rel="stylesheet" href="/css/general.css" />
-    <link rel="stylesheet" href="/css/components.css" />
-    <link rel="stylesheet" href="/css/dashboard.css" />
-    <link rel="stylesheet" href="/css/queries.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/landing.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <!-- Attached JS -->
-    <script src="/js/script.js" defer></script>
+    <script src="js/script.js" defer></script>
 
     <!-- Attached Fonts: Fraunces, & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="header">
+      <div class="header__wrapper container">
+        <a class="header__brand link-reset" href="#top">
+          <img class="header__logo" src="icons/logo-mark.svg" alt="" />
+          <span class="header__wordmark">AppTrack</span>
+        </a>
+
+        <nav class="nav" id="navigation">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a class="nav__link" href="#">How it works</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Features</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <button class="btn btn--ghost btn-reset" type="button">
+            Sign in
+          </button>
+
+          <button class="btn btn--primary btn-reset" type="button">
+            Get started
+          </button>
+        </div>
+
+        <button
+          class="header__btn-nav btn-reset"
+          type="button"
+          aria-label="navigation menu"
+          aria-expanded="false"
+          aria-controls="navigation"
+        >
+          <svg
+            class="header__icon-open"
+            aria-hidden="true"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 5h16" />
+            <path d="M4 12h16" />
+            <path d="M4 19h16" />
+          </svg>
+
+          <svg
+            class="header__icon-close"
+            aria-hidden="true"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- testing ONLY -->
+      <h1 style="margin-top: 1000px">main content</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+        repellat est perspiciatis fugit sequi pariatur laboriosam ratione
+        repellendus nesciunt velit labore voluptatibus cupiditate voluptas,
+        quasi, doloribus ipsam officia iste earum?
+        <a href="#">GOT HERE ONCE</a> Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Iure dicta eaque, iusto aliquam quo incidunt minima
+        culpa, ea harum cupiditate illum voluptatum dolores
+        <a href="#">GOT HERE TWICE</a> unde adipisci placeat, sunt fuga sint
+        dolor?
+      </p>
+    </main>
+  </body>
 </html>

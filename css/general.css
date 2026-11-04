@@ -1,4 +1,8 @@
-/* (tokens, reset, base) */
+/* 
+==========================================================================
+(TOKENS, RESET, BASE)
+=========================================================================== 
+*/
 
 /*
 --- 01 TYPOGRAPHY
@@ -7,7 +11,7 @@ Root: 100% (1rem = 16px). rem = px / 16
   Pick 7-8 per project. Body text never below 16px.
 - Fluid headings: clamp(min, rem + vw, max). Never pure vw (breaks user zoom).
 - Weights: 400 regular / 500 medium / 600 semibold / 700 bold
-- Line heights: 1.1 big headings / 1.25 small headings / 1.5 body (default) / 1.7 long text
+- Line heights: 1.1 big headings / 1.25 small headings / 1.5 body (default) / 1.6 relaxed text
 - Letter spacing: -0.02em big headings / 0.08em small uppercase labels
 
 --- 02 COLORS
@@ -45,6 +49,7 @@ Components only use semantic tokens. Check contrast: 4.5:1 text, 3:1 large text 
   --fs-16: 1rem;
   --fs-18: 1.125rem;
   --fs-20: 1.25rem;
+  --fs-22: 1.375rem; /* Only for the logo's wordmark */
   --fs-24: 1.5rem;
   --fs-30: 1.875rem;
   --fs-36: 2.25rem;
@@ -66,9 +71,11 @@ Components only use semantic tokens. Check contrast: 4.5:1 text, 3:1 large text 
 
   /* Line heights */
   --lh-tight: 1.1;
+  --lh-dense: 1.2;
   --lh-snug: 1.25;
+  --lh-medium: 1.4;
   --lh-normal: 1.5;
-  --lh-relaxed: 1.7;
+  --lh-relaxed: 1.6;
 
   /* Letter spacing */
   --ls-tight: -0.02em;
@@ -79,8 +86,10 @@ Components only use semantic tokens. Check contrast: 4.5:1 text, 3:1 large text 
   --space-2: 0.125rem;
   --space-4: 0.25rem;
   --space-8: 0.5rem;
+  --space-10: 0.625rem; /* For button padding and small gaps only (exception) */
   --space-12: 0.75rem;
   --space-16: 1rem;
+  --space-20: 1.25rem; /* For button padding and small gaps only (exception) */
   --space-24: 1.5rem;
   --space-32: 2rem;
   --space-48: 3rem;
@@ -117,6 +126,7 @@ Components only use semantic tokens. Check contrast: 4.5:1 text, 3:1 large text 
   --z-overlay: 200;
   --z-modal: 300;
   --z-toast: 400;
+  --z-skip-link: 500;
 
   /* Colors: palette (raw values, these are never used directly in components) */
   --teal-50: #eef7f5;
@@ -288,6 +298,11 @@ button {
   padding-inline: var(--gutter);
 }
 
+/* Hides content for everyone */
+.hidden {
+  display: none;
+}
+
 /* Hides content visually but keeps it for screen readers */
 .sr-only {
   position: absolute;
@@ -301,8 +316,22 @@ button {
   border: 0;
 }
 
-.hidden {
-  display: none;
+/* Containers */
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-6-cols {
+  grid-template-columns: repeat(6, 1fr);
 }
 
 /*==============================*/
