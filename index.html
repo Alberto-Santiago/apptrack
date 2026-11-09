@@ -7,8 +7,8 @@
 
     <!-- Attached CSS -->
     <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/landing.css" />
     <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/landing.css" />
     <link rel="stylesheet" href="css/dashboard.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
@@ -28,7 +28,7 @@
 
     <header class="header">
       <div class="header__wrapper container">
-        <a class="header__brand link-reset" href="#top">
+        <a class="header__brand link" href="#top">
           <img class="header__logo" src="icons/logo-mark.svg" alt="" />
           <span class="header__wordmark">AppTrack</span>
         </a>
@@ -50,17 +50,15 @@
         </nav>
 
         <div class="header__actions">
-          <button class="btn btn--ghost btn-reset" type="button">
-            Sign in
-          </button>
+          <button class="btn btn--sm btn--ghost" type="button">Sign in</button>
 
-          <button class="btn btn--primary btn-reset" type="button">
+          <button class="btn btn--sm btn--primary" type="button">
             Get started
           </button>
         </div>
 
         <button
-          class="header__btn-nav btn-reset"
+          class="header__btn-nav btn"
           type="button"
           aria-label="navigation menu"
           aria-expanded="false"
@@ -103,19 +101,124 @@
     </header>
 
     <main id="main-content">
-      <!-- testing ONLY -->
-      <h1 style="margin-top: 1000px">main content</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-        repellat est perspiciatis fugit sequi pariatur laboriosam ratione
-        repellendus nesciunt velit labore voluptatibus cupiditate voluptas,
-        quasi, doloribus ipsam officia iste earum?
-        <a href="#">GOT HERE ONCE</a> Lorem, ipsum dolor sit amet consectetur
-        adipisicing elit. Iure dicta eaque, iusto aliquam quo incidunt minima
-        culpa, ea harum cupiditate illum voluptatum dolores
-        <a href="#">GOT HERE TWICE</a> unde adipisci placeat, sunt fuga sint
-        dolor?
-      </p>
+      <section class="hero">
+        <div class="hero__wrapper container">
+          <div class="hero__content">
+            <div class="hero__textbox">
+              <span class="hero__tag">Built for real job searches</span>
+
+              <h1 class="hero__title">Stop losing track of your job search.</h1>
+              <p class="hero__description">
+                Track every application in one place. Know where each one
+                stands, follow up on time, and decide which jobs are worth your
+                energy.
+              </p>
+            </div>
+
+            <div class="hero__actions">
+              <button
+                class="btn btn--primary btn--lg btn--icon-align"
+                type="button"
+              >
+                <span>Get started &mdash; it's free</span>
+                <svg
+                  class="hero__btn-icon"
+                  aria-hidden="true"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.75"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </button>
+
+              <a class="link btn btn--secondary btn--lg" href="#"
+                >See how it works</a
+              >
+            </div>
+
+            <ul class="hero__benefits">
+              <li class="hero__benefit">
+                <svg
+                  class="hero__benefit-icon"
+                  aria-hidden="true"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.75"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                Free to use
+              </li>
+
+              <li class="hero__benefit">
+                <svg
+                  class="hero__benefit-icon"
+                  aria-hidden="true"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.75"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                Works on your phone
+              </li>
+
+              <li class="hero__benefit">
+                <svg
+                  class="hero__benefit-icon"
+                  aria-hidden="true"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.75"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                No spreadsheets
+              </li>
+            </ul>
+          </div>
+
+          <picture class="hero__picture">
+            <source
+              media="(max-width: 46.5em)"
+              srcset="img/img-hero-mobile.webp"
+              width="462"
+              height="690"
+            />
+
+            <img
+              class="hero__image"
+              src="img/img-hero-desktop.webp"
+              alt="AppTrack dashboard listing job applications, each with its status, and an upcoming interview reminder."
+              fetchpriority="high"
+              width="720"
+              height="648"
+            />
+          </picture>
+        </div>
+      </section>
     </main>
   </body>
 </html>
