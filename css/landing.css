@@ -202,3 +202,32 @@ LANDING PAGE SECTIONS
   width: calc(18 / 14 * 1em);
   color: var(--color-primary);
 }
+
+/*========================*/
+/* STATEMENT BAND SECTION  */
+/*========================*/
+.statement {
+  text-align: center;
+  padding: var(--space-64) 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-surface-muted);
+}
+
+.container--statement {
+  max-width: calc(var(--container-statement) + var(--gutter) * 2);
+}
+
+.statement__text {
+  color: var(--color-text-muted);
+  font-size: var(--fs-24);
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-snug);
+}
+
+.statement__highlight {
+  color: var(--color-text-strong);
+  font-weight: inherit;
+}

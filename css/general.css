@@ -10,9 +10,9 @@ Root: 100% (1rem = 16px). rem = px / 16
 - Font sizes (px): 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
   Pick 7-8 per project. Body text never below 16px.
 - Fluid headings: clamp(min, rem + vw, max). Never pure vw (breaks user zoom).
-- Weights: 400 regular / 500 medium / 600 semibold / 700 bold
-- Line heights: 1.1 big headings / 1.25 small headings / 1.5 body (default) / 1.6 relaxed text
-- Letter spacing: -0.02em big headings / 0.08em small uppercase labels
+- Weights: 400 regular / 500 medium / 600 semibold / 700 bold.
+- Line heights: 1.1 big headings / 1.25 small headings / 1.5 body (default) / 1.6 relaxed text.
+- Letter spacing: h1 -0.02em, h2 -0.015em, h3 -0.01em, h4 -0.005em, normal 0, small upper labels 0.08em.
 
 --- 02 COLORS
 Two layers: palette (raw values) + semantic roles (what components use).
@@ -79,6 +79,9 @@ Components only use semantic tokens. Check contrast: 4.5:1 text, 3:1 large text 
 
   /* Letter spacing */
   --ls-tight: -0.02em;
+  --ls-dense: -0.015em;
+  --ls-snug: -0.01em;
+  --ls-medium: -0.005em;
   --ls-normal: 0;
   --ls-wide: 0.08em;
 
@@ -104,6 +107,7 @@ Components only use semantic tokens. Check contrast: 4.5:1 text, 3:1 large text 
   /* Layout */
   --container-lg: 81.25rem;
   --container-md: 75rem;
+  --container-statement: 50rem; /* For STATEMENT BAND only (800px) */
   --gutter: 1.5rem;
 
   /* Border radius */
